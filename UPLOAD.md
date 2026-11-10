@@ -47,3 +47,15 @@ GitHub Pages has no Basic Auth. A small client-side gate is enough for design re
 python3 -m http.server 8080
 # http://127.0.0.1:8080/tests/sample/  → password Greeting2026
 ```
+
+## Customize short-code folders (2026)
+
+From local `2611_1724_eGreeting_Customize`, publish under short codes (no numeric prefixes):
+
+| Local folder | Short code | Live URL |
+|---|---|---|
+| `01_MCS` | `MCS` | https://mc-communications.github.io/greetings/MCS/ |
+| `02_VCR` | `VCR` | https://mc-communications.github.io/greetings/VCR/ |
+
+Omit `.fla` / `.ai` / `.psd` from Pages; ship HTML/JS/images (or JPG comps) only. Always include `../gate/config.js` + `../gate/protect.js` in each HTML file.
+
