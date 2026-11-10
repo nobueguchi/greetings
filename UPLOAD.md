@@ -13,7 +13,7 @@ This repo is private. Public Pages from a private repo needs a plan that allows 
 
 ## Password
 
-- **Default:** `design-review`
+- **Default:** `Greeting2026`
 - Session-scoped (`sessionStorage`) after a successful unlock
 - **Change it:** update `PASSWORD_SHA256` in `gate/config.js`:
 
@@ -45,5 +45,5 @@ GitHub Pages has no Basic Auth. A small client-side gate is enough for design re
 
 ```bash
 python3 -m http.server 8080
-# http://127.0.0.1:8080/tests/sample/  → password design-review
+# http://127.0.0.1:8080/tests/sample/  → password Greeting2026
 ```

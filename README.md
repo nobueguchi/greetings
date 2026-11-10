@@ -2,7 +2,7 @@
 
 Static design-review pages for eGreeting tests, hosted on GitHub Pages behind a shared password.
 
-- **Default password:** `design-review`
+- **Default password:** `Greeting2026`
 - **Gate config:** `gate/config.js`
 - **Upload how-to:** [UPLOAD.md](UPLOAD.md)
 
