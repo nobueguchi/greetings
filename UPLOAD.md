@@ -2,6 +2,10 @@
 
 Live URL (after Pages is enabled): `https://mc-communications.github.io/greetings/`
 
+## Site root is not for review
+
+`https://mc-communications.github.io/greetings/` (root `index.html`) is intentionally blank: **no project links, no listing**. Stakeholders should only receive per-project short-code URLs such as `/MCS/` or `/VCR/`.
+
 ## One-time: enable GitHub Pages
 
 1. **Settings → Pages**
@@ -37,9 +41,9 @@ GitHub Pages has no Basic Auth. A small client-side gate is enough for design re
 <script src="../../gate/protect.js"></script>
 ```
 
-3. Optionally link it from root `index.html`
+3. Do **not** add project links on root `index.html` (root stays blank)
 4. PR → merge to `main` → wait for the Pages workflow
-5. Share `https://mc-communications.github.io/greetings/tests/<name>/` + the password
+5. Share only the short-code / folder URL, e.g. `https://mc-communications.github.io/greetings/tests/<name>/` + the password — not the site root
 
 ### Local check
 
@@ -57,5 +61,5 @@ From local `2611_1724_eGreeting_Customize`, publish under short codes (no numeri
 | `01_MCS` | `MCS` | https://mc-communications.github.io/greetings/MCS/ |
 | `02_VCR` | `VCR` | https://mc-communications.github.io/greetings/VCR/ |
 
-Omit `.fla` / `.ai` / `.psd` from Pages; ship HTML/JS/images (or JPG comps) only. Always include `../gate/config.js` + `../gate/protect.js` in each HTML file.
+Omit `.fla` / `.ai` / `.psd` from Pages; ship HTML/JS/images (or JPG comps) only. Always include `../gate/config.js` + `../gate/protect.js` in each HTML file. Do **not** list projects on root `index.html`; share short-code URLs only.
 
