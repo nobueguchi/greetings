@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample test page</title>
+<script src="../../gate/config.js"></script>
+<script src="../../gate/protect.js"></script>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #5c564c;
+    --paper: #e7e1d4;
+    --band: #314038;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    background:
+      linear-gradient(180deg, #f3eee3 0%, var(--paper) 100%);
+  }
+  header {
+    padding: 1.25rem 1.5rem;
+    background: var(--band);
+    color: #f2efe8;
+  }
+  header p {
+    margin: .25rem 0 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: .85rem;
+    opacity: .85;
+  }
+  main {
+    width: min(36rem, 92vw);
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  h1 {
+    margin: 0 0 .75rem;
+    font-weight: normal;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+  p {
+    margin: 0 0 1rem;
+    line-height: 1.55;
+    color: var(--muted);
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  a {
+    color: var(--band);
+  }
+</style>
+</head>
+<body>
+<header>
+  <strong>tests / sample</strong>
+  <p>Sample upload for password-gated design review</p>
+</header>
+<main>
+  <h1>Sample test page</h1>
+  <p>If you can read this, the shared-password gate worked for this session. Replace this folder with a real design drop, or add a sibling folder under <code>tests/</code>.</p>
+  <p><a href="../../">← Back to index</a></p>
+</main>
+</body>
+</html>
