@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VCR — design review</title>
+<script src="../gate/config.js"></script>
+<script src="../gate/protect.js"></script>
+<style>
+  :root {
+    --bg0: #12151a;
+    --bg1: #2a3340;
+    --ink: #f2efe8;
+    --muted: #c8c2b6;
+    --line: #3d4652;
+    --accent: #a8b59a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: system-ui, -apple-system, sans-serif;
+    background:
+      radial-gradient(120% 80% at 50% 0%, var(--bg1) 0%, var(--bg0) 55%, #0b0d10 100%);
+  }
+  main {
+    width: min(52rem, 92vw);
+    margin: 0 auto;
+    padding: 3.5rem 0 4rem;
+  }
+  h1 {
+    margin: 0 0 .35rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  }
+  .lede {
+    margin: 0 0 2rem;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 36rem;
+  }
+  section { margin: 0 0 2.5rem; }
+  h2 {
+    margin: 0 0 .85rem;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  figure {
+    margin: 0 0 1.25rem;
+  }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #0b0d10;
+  }
+  figcaption {
+    margin-top: .45rem;
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+  .note {
+    color: var(--muted);
+    font-size: .85rem;
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>VCR</h1>
+  <p class="lede">Canada / Seikado greeting concept comps for review. Source Illustrator and Photoshop files stay local; only JPG previews are published here.</p>
+
+  <section>
+    <h2>2026 concepts</h2>
+    <figure>
+      <img src="images/greetings_canada_2026.jpg" alt="Canada greetings concept 2026" loading="lazy">
+      <figcaption>greetings_canada.jpg — 2026 Canada concept</figcaption>
+    </figure>
+    <figure>
+      <img src="images/seikado_2026.jpg" alt="Seikado greetings concept 2026" loading="lazy">
+      <figcaption>_2026_seikado.jpg — 2026 Seikado concept</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Prior years (reference)</h2>
+    <div class="grid">
+      <figure>
+        <img src="images/greetings_canada_2024.jpg" alt="Canada greetings 2024" loading="lazy">
+        <figcaption>2024</figcaption>
+      </figure>
+      <figure>
+        <img src="images/greetings_canada_2023.jpg" alt="Canada greetings 2023" loading="lazy">
+        <figcaption>2023</figcaption>
+      </figure>
+      <figure>
+        <img src="images/greetings_canada_2022.jpg" alt="Canada greetings 2022" loading="lazy">
+        <figcaption>2022</figcaption>
+      </figure>
+    </div>
+    <p class="note">Skipped from publish: .ai / .psd sources (not web-reviewable).</p>
+  </section>
+</main>
+</body>
+</html>

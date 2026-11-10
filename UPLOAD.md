@@ -2,6 +2,10 @@
 
 Live URL (after Pages is enabled): `https://mc-communications.github.io/greetings/`
 
+## Site root is not for review
+
+`https://mc-communications.github.io/greetings/` (root `index.html`) is intentionally blank: **no project links, no listing**. Stakeholders should only receive per-project short-code URLs such as `/MCS/` or `/VCR/`.
+
 ## One-time: enable GitHub Pages
 
 1. **Settings → Pages**
@@ -37,9 +41,9 @@ GitHub Pages has no Basic Auth. A small client-side gate is enough for design re
 <script src="../../gate/protect.js"></script>
 ```
 
-3. Optionally link it from root `index.html`
+3. Do **not** add project links on root `index.html` (root stays blank)
 4. PR → merge to `main` → wait for the Pages workflow
-5. Share `https://mc-communications.github.io/greetings/tests/<name>/` + the password
+5. Share the **full HTML URL** + password line (see format below), e.g. `…/tests/<name>/index.html` — not the site root, and prefer full file paths over folder roots only
 
 ### Local check
 
@@ -47,3 +51,36 @@ GitHub Pages has no Basic Auth. A small client-side gate is enough for design re
 python3 -m http.server 8080
 # http://127.0.0.1:8080/tests/sample/  → password Greeting2026
 ```
+
+## Customize short-code folders (2026)
+
+From local `2611_1724_eGreeting_Customize`, publish under short codes (no numeric prefixes). Do **not** list projects on root `index.html`. Omit `.fla` / `.ai` / `.psd`; ship HTML/JS/images (or JPG comps) with `../gate/config.js` + `../gate/protect.js`.
+
+### Share format (copy/paste to stakeholders)
+
+Send the **full HTML path** (not the site root, and prefer not only the folder root). Always include the password line:
+
+```
+https://mc-communications.github.io/greetings/MCS/winter_MCS.html
+Password: Greeting2026
+```
+
+### Current share links — MCS (`01_MCS` → `MCS`)
+
+```
+https://mc-communications.github.io/greetings/MCS/winter_MCS.html
+Password: Greeting2026
+
+https://mc-communications.github.io/greetings/MCS/winter-portrait_MCS.html
+Password: Greeting2026
+```
+
+(`MCS/index.html` only redirects to `winter_MCS.html` — share the explicit HTML files above.)
+
+### Current share links — VCR (`02_VCR` → `VCR`)
+
+```
+https://mc-communications.github.io/greetings/VCR/index.html
+Password: Greeting2026
+```
+
